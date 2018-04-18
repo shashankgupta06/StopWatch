@@ -18,7 +18,7 @@
         android:layout_marginTop="152dp"
         android:ems="10"
         android:gravity="center"
-        android:hint="Enter Time in Milliseconds"
+        android:hint="Enter Time in Seconds"
         android:inputType="textPersonName"
         app:layout_constraintBottom_toTopOf="@+id/btn"
         app:layout_constraintEnd_toEndOf="parent"
