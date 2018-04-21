@@ -4,6 +4,7 @@ import android.os.Vibrator;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.method.KeyListener;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -33,13 +34,14 @@ public class HomeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String text = edTime.getText().toString();
-                final int time = Integer.parseInt(edTime.getText().toString());
 
-                if (text.equalsIgnoreCase("")) {
 
+                if (text.length() == 0) {
                     Toast.makeText(HomeActivity.this, "Please select a value", Toast.LENGTH_LONG).show();
                     return;
                 }
+
+                final int time = Integer.parseInt(edTime.getText().toString());
 
                 if (!text.equalsIgnoreCase("")) {
                     edTime.setKeyListener(null);
@@ -66,6 +68,7 @@ public class HomeActivity extends AppCompatActivity {
                     }.start();
 
                 }
+
             }
 
         });
