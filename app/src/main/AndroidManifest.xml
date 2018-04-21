@@ -22,8 +22,6 @@
 
         <activity android:name=".HomeActivity"></activity>
 
-        <receiver android:name=".StopWatch" />
-
 
     </application>
 
